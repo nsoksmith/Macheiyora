@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Kunai1
+  m_Shader: {fileID: 4800000, guid: 0233238f20fac5c4c9efba7053394971, type: 3}
+  m_ShaderKeywords: _CLEARCOAT_ON _LAMEBACKFACE_ON _LAME_NONE _USE_CARBON_COLOR1_ON
+    _USE_CARBON_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseGlitterTex:
+        m_Texture: {fileID: 2800000, guid: 6c5ccb14ebbc89246abcc25a282fa127, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Carbon_Normal:
+        m_Texture: {fileID: 2800000, guid: 730ae9eea022ae8429f4078bf0ef63f2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Carbon_Tex:
+        m_Texture: {fileID: 2800000, guid: 6b18b483b2f2c1c4ea13d5d7531c68c7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 2800000, guid: 6acd0c8bb66f6864bb93eb62b192aeea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GradMask:
+        m_Texture: {fileID: 2800000, guid: 6acd0c8bb66f6864bb93eb62b192aeea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GradTex:
+        m_Texture: {fileID: 2800000, guid: 697d6244147d4994cac3a31be3a78944, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ed3597fafd7d42647a7788926da987f5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: b0ce09e9f372d3449bcdce4471c4c48d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BSSCInvert: 1
+    - _BSSmoothAdjust: 1
+    - _BSSmoothChannel: 0
+    - _BaseAffectByLightDir: 1
+    - _BaseGlitterLevel: 0.12
+    - _BaseGlitterTex_Tiling: 40
+    - _BaseSurfSmooth: 0.85
+    - _BlendFactor: 1
+    - _BlendMode: 1
+    - _BumpScale: 1
+    - _CCMaskChannel: 3
+    - _CCSCInvert: 0
+    - _CCSmoothAdjust: 1
+    - _CCSmoothChannel: 4
+    - _CarbonMaskChannel: 3
+    - _Carbon_Aspect: 0.5
+    - _Carbon_BumpScale: 0.3
+    - _Carbon_Detail: 0.8
+    - _Carbon_StripeAngle: 0
+    - _Carbon_Tiling: 25
+    - _ClearCoat: 1
+    - _ClearCoatCount: 1
+    - _ClearCoatNormalDirectX: 0
+    - _ClearCoatNormalLevel: 0.1
+    - _ClearCoatNormal_Offset_X: 0
+    - _ClearCoatNormal_Offset_Y: 0
+    - _ClearCoatNormal_Tiling_X: 1
+    - _ClearCoatNormal_Tiling_Y: 1
+    - _ClearCoatSmooth: 0.95
+    - _CullMode: 2
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _DetailTex_Offset_X: 0
+    - _DetailTex_Offset_Y: 0
+    - _DetailTex_Tiling_X: 1
+    - _DetailTex_Tiling_Y: 1
+    - _DirectX: 0
+    - _DirectX2: 0
+    - _DstBlend: 0
+    - _EmissionMaskChannel: 4
+    - _EmissiveBoost: 0
+    - _FresnelLevel: 0
+    - _FresnelPower: 0.5
+    - _GlitterMaskChannel: 4
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _GradMaskChannel: 3
+    - _GradMask_Offset_X: 0
+    - _GradMask_Offset_Y: 0
+    - _GradMask_Tiling_X: 1
+    - _GradMask_Tiling_Y: 1
+    - _GradPower: 1.2
+    - _GradShift: 0
+    - _InvertCCMask: 0
+    - _InvertCarbonMask: 0
+    - _InvertEmissionMask: 0
+    - _InvertFresnel: 0
+    - _InvertGlitterMask: 0
+    - _InvertGrad: 0
+    - _InvertGradMask: 0
+    - _InvertLameMask: 0
+    - _Is_MatCap: 0
+    - _Lame: 0
+    - _LameAspect: 0.5
+    - _LameBackFace: 1
+    - _LameChroma: 0.8
+    - _LameDistance: 0.85
+    - _LameHue: 0
+    - _LameMaskChannel: 4
+    - _LameMetallic: 0.9
+    - _LameSmooth: 0.9
+    - _LameThinOut: 0
+    - _LameVolume: 300
+    - _MainTex_Offset_X: 0
+    - _MainTex_Offset_Y: 0
+    - _MainTex_Tiling_X: 1
+    - _MainTex_Tiling_Y: 1
+    - _Metallic: 0
+    - _MetallicAdjust: 1
+    - _MetallicCInvert: 0
+    - _MetallicChannel: 1
+    - _Mode: 0
+    - _NormalLevel: 1
+    - _NormalLevel2: 0.5
+    - _NormalMap2_Offset_X: 0
+    - _NormalMap2_Offset_Y: 0
+    - _NormalMap2_Tiling_X: 1
+    - _NormalMap2_Tiling_Y: 1
+    - _NormalMap_Offset_X: 0
+    - _NormalMap_Offset_Y: 0
+    - _NormalMap_Tiling_X: 1
+    - _NormalMap_Tiling_Y: 1
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _Use_Carbon: 1
+    - _Use_Carbon_Color1: 1
+    - _Use_Carbon_Color2: 0
+    - _Use_VertColorAsMask: 0
+    - _ZWrite: 1
+    - __Advanced_Foldout: 0
+    - __Albedo_Foldout: 1
+    - __Carbon_Foldout: 1
+    - __ClearCoat_Foldout: 0
+    - __Detail_Foldout: 1
+    - __Lame_Foldout: 0
+    - __Lang: 0
+    - __Mask_Foldout: 1
+    - __masked: 1
+    - __sync_ClearCoatNormal_Offset: 0
+    - __sync_ClearCoatNormal_Tiling: 1
+    - __sync_DetailTex_Offset: 0
+    - __sync_DetailTex_Tiling: 1
+    - __sync_GradMask_Offset: 0
+    - __sync_GradMask_Tiling: 1
+    - __sync_MainTex_Offset: 0
+    - __sync_MainTex_Tiling: 1
+    - __sync_NormalMap2_Offset: 0
+    - __sync_NormalMap2_Tiling: 1
+    - __sync_NormalMap_Offset: 0
+    - __sync_NormalMap_Tiling: 1
+    m_Colors:
+    - _Carbon_Color1: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _Carbon_Color2: {r: 0.5660378, g: 0, b: 0, a: 1}
+    - _ClearCoatColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

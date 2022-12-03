@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Grad16
+  m_Shader: {fileID: 4800000, guid: 0233238f20fac5c4c9efba7053394971, type: 3}
+  m_ShaderKeywords: _ALPHABLEND_OFF _BASESURFGLITTER_ON _EMISSION_ON _GLITTERTYPE_ON
+    _INVERTMASK_ON _LAMEGLITTER_ON _LAMESURFGLITTER_ON _LAME_NONE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseGlitterTex:
+        m_Texture: {fileID: 2800000, guid: 6c5ccb14ebbc89246abcc25a282fa127, type: 3}
+        m_Scale: {x: 40, y: 40}
+        m_Offset: {x: 0, y: 0}
+    - _ClearCoatNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailTex:
+        m_Texture: {fileID: 2800000, guid: 3b64ebfac51c5a543845bb2cc1667ece, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlitterTex:
+        m_Texture: {fileID: 2800000, guid: 2a70868249c97d34dac12bea58f41f90, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GradMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GradTex:
+        m_Texture: {fileID: 2800000, guid: bbdf064dde2cf9f41ba6d805182ec1b3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: f35d2b399505cc046ac4a185847fcfef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 81f98aabe6f69244db0c543c43a848c7, type: 3}
+        m_Scale: {x: 30, y: 30}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AffectByLightDir: 1
+    - _BSSCInvert: 0
+    - _BSSmoothAdjust: 0.7
+    - _BSSmoothChannel: 0
+    - _BaseAffectByLightDir: 1
+    - _BaseGlitterLevel: 0.3
+    - _BaseGlitterTex_Offset_X: 0
+    - _BaseGlitterTex_Offset_Y: 0
+    - _BaseGlitterTex_Tiling: 40
+    - _BaseGlitterTex_Tiling_X: 40
+    - _BaseGlitterTex_Tiling_Y: 40
+    - _BaseGlitterVolume: 40
+    - _BaseSurfGlitter: 1
+    - _BaseSurfGlitter_Offset_X: 0
+    - _BaseSurfGlitter_Offset_Y: 0
+    - _BaseSurfGlitter_Tiling_X: 40
+    - _BaseSurfGlitter_Tiling_Y: 40
+    - _BaseSurfSmooth: 0.8
+    - _BaseSurfSmoothness: 0.6
+    - _BlendFactor: 1
+    - _BlendMode: 1
+    - _CCSCInvert: 0
+    - _CCSmoothAdjust: 1
+    - _CCSmoothChannel: 4
+    - _CellSize: 100
+    - _ClearCoat: 0
+    - _ClearCoatCount: 1
+    - _ClearCoatNormalDirectX: 0
+    - _ClearCoatNormalLevel: 0.127
+    - _ClearCoatNormalOpenGL: 0
+    - _ClearCoatNormalTiling: 30
+    - _ClearCoatNormal_Offset_X: 0
+    - _ClearCoatNormal_Offset_Y: 0
+    - _ClearCoatNormal_Tiling_X: 1
+    - _ClearCoatNormal_Tiling_Y: 1
+    - _ClearCoatSmooth: 0.95
+    - _ClearCoatSmoothness: 0.92
+    - _CullMode: 0
+    - _DetailTex_Offset_X: 0
+    - _DetailTex_Offset_Y: 0
+    - _DetailTex_Tiling_X: 4
+    - _DetailTex_Tiling_Y: 4
+    - _DirectX: 0
+    - _DirectX2: 0
+    - _EmissionMaskChannel: 4
+    - _EmissionRatio: 0
+    - _EmissiveBoost: 0
+    - _FresnelLevel: 0
+    - _FresnelPower: 0.5
+    - _GlitterMaskChannel: 4
+    - _GlitterSperkle: 2.13
+    - _GlitterTresh: 1
+    - _GlitterType: 1
+    - _GlitterVolume: 20
+    - _GradMaskChannel: 4
+    - _GradMask_Offset_X: 0
+    - _GradMask_Offset_Y: 0
+    - _GradMask_Tiling_X: 1
+    - _GradMask_Tiling_Y: 1
+    - _GradPower: 1.2
+    - _GradShift: 0
+    - _InvertEmissionMask: 0
+    - _InvertFresnel: 0
+    - _InvertGlitterMask: 0
+    - _InvertGrad: 0
+    - _InvertGradMask: 0
+    - _InvertLameMask: 0
+    - _InvertMask: 0
+    - _Is_MatCap: 0
+    - _Lame: 0
+    - _LameAffectByLightDir: 0
+    - _LameAspect: 0.5
+    - _LameBackFace: 1
+    - _LameChroma: 0.754
+    - _LameDistance: 0.72
+    - _LameGlitter: 1
+    - _LameGlitterLevel: 0.5
+    - _LameGlitterVolume: 111
+    - _LameHue: 0.538
+    - _LameLevel: 0.5
+    - _LameMaskChannel: 4
+    - _LameMetallic: 0.9
+    - _LameSmooth: 0.9
+    - _LameSmoothness: 0.9
+    - _LameSurfGlitter: 1
+    - _LameThinOut: 0.569
+    - _LameVolume: 100
+    - _Lang: 0
+    - _MainTexTiling: 10
+    - _MainTex_Offset_X: 0
+    - _MainTex_Offset_Y: 0
+    - _MainTex_Tiling: 1
+    - _MainTex_Tiling_X: 4
+    - _MainTex_Tiling_Y: 4
+    - _MaskTiling: 1
+    - _Metallic: 0.95
+    - _MetallicAdjust: 0.9
+    - _MetallicCInvert: 0
+    - _MetallicChannel: 1
+    - _MoreLame: 0
+    - _NormalLevel: 1
+    - _NormalLevel2: 0.5
+    - _NormalMap2_Offset_X: 0
+    - _NormalMap2_Offset_Y: 0
+    - _NormalMap2_Tiling_X: 1
+    - _NormalMap2_Tiling_Y: 1
+    - _NormalMap_Offset_X: 0
+    - _NormalMap_Offset_Y: 0
+    - _NormalMap_Tiling_X: 4
+    - _NormalMap_Tiling_Y: 4
+    - _NormalTiling: 30
+    - _OpenGL: 0
+    - _OpenGL2: 0
+    - _Transparency: 0
+    - __Advanced_Foldout: 0
+    - __Albedo_Foldout: 1
+    - __ClearCoat_Foldout: 0
+    - __Detail_Foldout: 0
+    - __Lame_Foldout: 0
+    - __Lang: 0
+    - __Mask_Foldout: 0
+    - __masked: 0
+    - __sync_BaseGlitterTex_Offset: 0
+    - __sync_BaseGlitterTex_Tiling: 1
+    - __sync_ClearCoatNormal_Offset: 0
+    - __sync_ClearCoatNormal_Tiling: 1
+    - __sync_DetailTex_Offset: 0
+    - __sync_DetailTex_Tiling: 1
+    - __sync_GradMask_Offset: 0
+    - __sync_GradMask_Tiling: 1
+    - __sync_MainTex_Offset: 0
+    - __sync_MainTex_Tiling: 1
+    - __sync_NormalMap2_Offset: 0
+    - __sync_NormalMap2_Tiling: 1
+    - __sync_NormalMap_Offset: 0
+    - __sync_NormalMap_Tiling: 1
+    - _test: 0
+    m_Colors:
+    - _ClearCoatColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Test_vec: {r: 1, g: 1, b: 1, a: 1}
+    - _color: {r: 1, g: 1, b: 1, a: 1}
