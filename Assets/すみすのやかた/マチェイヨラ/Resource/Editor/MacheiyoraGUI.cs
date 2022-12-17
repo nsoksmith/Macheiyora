@@ -18,7 +18,7 @@ namespace Macheiyora
         bool isOpenURL;
         private const string boothURL  = "https://smith-no-yakata.booth.pm/items/3767387";
         private const string gitHubURL = "https://github.com/nsoksmith/Macheiyora";
-        private const string manualURL = "https://zenn.dev/nsoksmith/articles/macheiyora_document";
+        private const string manualURL = "https://github.com/nsoksmith/Macheiyora/blob/main/usage.md";
         
         // UI -----------------------------
         public GUILayoutOption[] shortButtonStyle = new GUILayoutOption[]{ GUILayout.Width(130) }; 
