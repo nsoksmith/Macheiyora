@@ -120,10 +120,12 @@ Material:
     - _BlendMode: 1
     - _BlendSrc: 5
     - _BumpScale: 1
+    - _CCMaskChannel: 4
     - _CCSCInvert: 0
     - _CCSmoothAdjust: 1
     - _CCSmoothChannel: 4
     - _CarbonMaskChannel: 4
+    - _Carbon_Aspect: 0.5
     - _Carbon_BumpScale: 0.3
     - _Carbon_Detail: 0.8
     - _Carbon_StripeAngle: 0
@@ -170,11 +172,13 @@ Material:
     - _GradMask_Tiling_Y: 1
     - _GradPower: 1.2
     - _GradShift: 0
+    - _InvertCCMask: 0
     - _InvertCarbonMask: 0
     - _InvertEmissionMask: 0
     - _InvertFresnel: 0
     - _InvertGlitterMask: 0
-    - _InvertGrad: 0
+    - _InvertGrad: 1
+    - _InvertGradFromDetailTex: 0
     - _InvertGradMask: 0
     - _InvertLameMask: 0
     - _InvertMask: 0
@@ -235,6 +239,7 @@ Material:
     - _Use_Carbon: 1
     - _Use_Carbon_Color1: 1
     - _Use_Carbon_Color2: 0
+    - _Use_VertColorAsMask: 0
     - _ZWrite: 1
     - __Advanced_Foldout: 0
     - __Albedo_Foldout: 1

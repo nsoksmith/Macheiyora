@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 6c5ccb14ebbc89246abcc25a282fa127, type: 3}
         m_Scale: {x: 30, y: 30}
         m_Offset: {x: 0, y: 0}
     - _NormalMap2:
@@ -71,8 +71,9 @@ Material:
     m_Floats:
     - _AffectByLightDir: 1
     - _BSSCInvert: 0
+    - _BSSSqrt: 0
     - _BSSmoothAdjust: 0.8
-    - _BSSmoothChannel: 4
+    - _BSSmoothChannel: 0
     - _BaseAffectByLightDir: 1
     - _BaseGlitterLevel: 0.3
     - _BaseGlitterTex_Offset_X: 0
@@ -92,6 +93,7 @@ Material:
     - _BlendMode: 1
     - _CCMaskChannel: 4
     - _CCSCInvert: 0
+    - _CCSSqrt: 0
     - _CCSmoothAdjust: 1
     - _CCSmoothChannel: 4
     - _CarbonMaskChannel: 4
@@ -144,7 +146,8 @@ Material:
     - _InvertEmissionMask: 0
     - _InvertFresnel: 0
     - _InvertGlitterMask: 0
-    - _InvertGrad: 0
+    - _InvertGrad: 1
+    - _InvertGradFromDetailTex: 0
     - _InvertGradMask: 0
     - _InvertLameMask: 0
     - _InvertMask: 0
@@ -180,16 +183,16 @@ Material:
     - _MetallicCInvert: 0
     - _MetallicChannel: 0
     - _MoreLame: 0
-    - _NormalLevel: 0.7
+    - _NormalLevel: 0.5
     - _NormalLevel2: 0.5
     - _NormalMap2_Offset_X: 0
     - _NormalMap2_Offset_Y: 0
     - _NormalMap2_Tiling_X: 1
-    - _NormalMap2_Tiling_Y: 1
+    - _NormalMap2_Tiling_Y: 200
     - _NormalMap_Offset_X: 0
     - _NormalMap_Offset_Y: 0
-    - _NormalMap_Tiling_X: 1
-    - _NormalMap_Tiling_Y: 1
+    - _NormalMap_Tiling_X: 2
+    - _NormalMap_Tiling_Y: 100
     - _NormalTiling: 30
     - _OpenGL: 0
     - _OpenGL2: 0
@@ -200,12 +203,12 @@ Material:
     - _Use_VertColorAsMask: 0
     - __Advanced_Foldout: 0
     - __Albedo_Foldout: 1
-    - __Carbon_Foldout: 1
-    - __ClearCoat_Foldout: 1
+    - __Carbon_Foldout: 0
+    - __ClearCoat_Foldout: 0
     - __Detail_Foldout: 1
-    - __Lame_Foldout: 1
+    - __Lame_Foldout: 0
     - __Lang: 0
-    - __Mask_Foldout: 1
+    - __Mask_Foldout: 0
     - __masked: 0
     - __sync_BaseGlitterTex_Offset: 0
     - __sync_BaseGlitterTex_Tiling: 1
@@ -218,9 +221,9 @@ Material:
     - __sync_MainTex_Offset: 0
     - __sync_MainTex_Tiling: 1
     - __sync_NormalMap2_Offset: 0
-    - __sync_NormalMap2_Tiling: 1
+    - __sync_NormalMap2_Tiling: 0
     - __sync_NormalMap_Offset: 0
-    - __sync_NormalMap_Tiling: 1
+    - __sync_NormalMap_Tiling: 0
     - _test: 0
     m_Colors:
     - _Carbon_Color1: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}

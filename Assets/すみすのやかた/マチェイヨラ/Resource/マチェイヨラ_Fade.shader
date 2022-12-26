@@ -36,13 +36,15 @@ Shader "すみすのやかた/マチェイヨラ/マチェイヨラ_Fade"
         [Enum(UnityEngine.Rendering.BlendMode)] _BlendSrc ("Blend Src" , Int) = 1
         [Enum(UnityEngine.Rendering.BlendMode)] _BlendDst ("Blend Dst" , Int) = 1
 
-        [NoScaleOffset] _GradTex        ("Gradation Tex"    , 2D) = "white" {}
-        [Toggle]        _InvertGrad     ("Invert Grad"      , Int) = 0
+        [NoScaleOffset] _GradTex          ("Gradation Tex"    , 2D) = "white" {}
+        [Toggle]        _InvertGrad       ("Invert Grad"      , Int) = 0
+        [Enum(R,0,G,1,B,2,A,3,None,4)]
+                 _InvertGradFromDetailTex ("From Detail Tex" , Int) = 4
         [Enum(Mix,0,Multiply,1,Additive,2)]
                         _BlendMode        ("Blend Mode"      , Int) = 1
-                        _BlendFactor    ("Blend Factor"     , range(0, 1)) = 1
-                        _GradPower      ("Gradation Power"  , float) = 1.2
-                        _GradShift      ("Gradation Shift"  , float) = 0
+                        _BlendFactor      ("Blend Factor"     , range(0, 1)) = 1
+                        _GradPower        ("Gradation Power"  , float) = 1.2
+                        _GradShift        ("Gradation Shift"  , float) = 0
 
         [NoScaleOffset] _DetailTex          ("Detail Tex" , 2D) = "white" {}
         [HideInInspector] __sync_DetailTex_Tiling ("__sync", Int) = 1

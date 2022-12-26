@@ -1,5 +1,5 @@
 ﻿// ========== ========== ==========
-//   マチェイヨラ       ver 3.0.0
+//   マチェイヨラ       ver 3.1.0
 //      Author : にしおかすみす！
 //      Twitter : @nsokSMITHdayo
 // ========== ========== ==========
@@ -14,7 +14,7 @@ namespace Macheiyora
 {
     public class MacheiyoraGUI : ShaderGUI
     {
-        private const string shaderVer = "3.0.0";
+        private const string shaderVer = "3.1.0";
         bool isOpenURL;
         private const string boothURL  = "https://smith-no-yakata.booth.pm/items/3767387";
         private const string gitHubURL = "https://github.com/nsoksmith/Macheiyora";
@@ -134,6 +134,7 @@ namespace Macheiyora
 
             MaterialProperty GradTex     = FindProperty("_GradTex", Prop);
             MaterialProperty InvertGrad  = FindProperty("_InvertGrad", Prop);
+            MaterialProperty InvertGradFromDetailTex = FindProperty("_InvertGradFromDetailTex", Prop);
             MaterialProperty BlendMode   = FindProperty("_BlendMode", Prop);
             MaterialProperty BlendFactor = FindProperty("_BlendFactor", Prop);
             MaterialProperty GradPower   = FindProperty("_GradPower", Prop);
@@ -285,6 +286,7 @@ namespace Macheiyora
             String Loc_Level                = "N/A";
             String Loc_Power                = "N/A";
             String Loc_Invert               = "N/A";
+            String Loc_FromDetailTex        = "N/A";
             String Loc_CullMode             = "N/A";
             String Loc_CullHelpBox          = "N/A";
             String Loc_MainTex              = "N/A";
@@ -351,6 +353,7 @@ namespace Macheiyora
                 Loc_Level                = "レベル";
                 Loc_Power                = "パワー";
                 Loc_Invert               = "反転";
+                Loc_FromDetailTex        = "ディテールテクスチャから";
                 Loc_CullMode             = "カリングモード";
                 Loc_CullHelpBox          = "　　Back : 表面のみ描画\n　　Off : 　両面描画";
                 Loc_MainTex              = "テクスチャ";
@@ -411,6 +414,7 @@ namespace Macheiyora
                 Loc_Level                = "Level";
                 Loc_Power                = "Power";
                 Loc_Invert               = "Invert";
+                Loc_FromDetailTex        = "From Detail Texture";
                 Loc_CullMode             = "Culling Mode";
                 Loc_CullHelpBox          = "　　Back : Drow only front faces\n　　Off : 　Drow double sided";
                 Loc_MainTex              = "Main Texture";
@@ -610,6 +614,7 @@ namespace Macheiyora
                     EditorGUI.indentLevel ++;
                     mat.SetInt("_InvertGrad", Convert.ToInt32(bool_InvertGrad));
                 }
+                if(mat.GetInt("_InvertGrad")==1) ME.ShaderProperty(InvertGradFromDetailTex, new GUIContent(Loc_FromDetailTex));
                 ME.ShaderProperty(BlendMode, new GUIContent(Loc_BlendMode));
                 ME.ShaderProperty(BlendFactor, new GUIContent(Loc_BlendFactor));
                 ME.ShaderProperty(GradPower, new GUIContent(Loc_Power));

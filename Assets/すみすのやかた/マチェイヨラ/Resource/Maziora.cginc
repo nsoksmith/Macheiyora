@@ -67,6 +67,7 @@ struct Input
 fixed4 _Color;
 
 int    _InvertGrad;
+int    _InvertGradFromDetailTex;
 int    _BlendMode;
 float  _BlendFactor;
 float  _GradPower;
@@ -209,9 +210,11 @@ void surf (Input i, inout SurfaceOutputStandard o)
     float2 uv  = float2(1 - grad, 0.5);
     float2 uv2 = float2(1 - grad2, 0.5);
 
+    fixed4 detail = tex2D(_DetailTex, custom_uv_DetailTex);
+
     if(_InvertGrad == 1){
-        uv  = float2(grad, 0.5);
-        uv2 = float2(grad2, 0.5);
+        uv  = lerp(uv, float2(grad, 0.5), selectChannel(detail, 1, _InvertGradFromDetailTex, 1, 0));
+        uv2 = lerp(uv2, float2(grad2, 0.5), selectChannel(detail, 1, _InvertGradFromDetailTex, 1, 0));
     }
 
     // MatCap
@@ -254,7 +257,6 @@ void surf (Input i, inout SurfaceOutputStandard o)
     float emissionMask = selectMask(maskVec, _EmissionMaskChannel, _InvertEmissionMask, __masked);
     o.Emission         = c.rgb * _EmissiveBoost * emissionMask;
 
-    fixed4 detail = tex2D(_DetailTex, custom_uv_DetailTex);
     o.Smoothness  = selectChannel(detail, _BSSmoothAdjust, _BSSmoothChannel, _BaseSurfSmooth, _BSSCInvert);
     o.Metallic    = selectChannel(detail, _MetallicAdjust, _MetallicChannel, _Metallic, _MetallicCInvert);
     o.Alpha = mainColor.a;

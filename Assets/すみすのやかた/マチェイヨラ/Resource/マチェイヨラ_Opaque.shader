@@ -33,6 +33,8 @@ Shader "すみすのやかた/マチェイヨラ/マチェイヨラ_Opaque"
  
         [NoScaleOffset] _GradTex          ("Gradation Tex"   , 2D) = "white" {}
         [Toggle]        _InvertGrad       ("Invert Grad"     , Int) = 0
+        [Enum(R,0,G,1,B,2,A,3,None,4)]
+                 _InvertGradFromDetailTex ("From Detail Tex" , Int) = 4
         [Enum(Mix,0,Multiply,1,Additive,2)]
                         _BlendMode        ("Blend Mode"      , Int) = 1
                         _BlendFactor      ("Blend Factor"    , range(0, 1)) = 1

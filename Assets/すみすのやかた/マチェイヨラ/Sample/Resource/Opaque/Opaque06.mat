@@ -93,6 +93,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BSSCInvert: 1
+    - _BSSSqrt: 1
     - _BSSmoothAdjust: 1
     - _BSSmoothChannel: 0
     - _BaseAffectByLightDir: 1
@@ -104,6 +105,7 @@ Material:
     - _BumpScale: 1
     - _CCMaskChannel: 4
     - _CCSCInvert: 0
+    - _CCSSqrt: 0
     - _CCSmoothAdjust: 1
     - _CCSmoothChannel: 4
     - _CarbonMaskChannel: 4
@@ -152,6 +154,7 @@ Material:
     - _InvertFresnel: 0
     - _InvertGlitterMask: 0
     - _InvertGrad: 0
+    - _InvertGradFromDetailTex: 4
     - _InvertGradMask: 0
     - _InvertLameMask: 0
     - _Is_MatCap: 0
@@ -197,10 +200,10 @@ Material:
     - _Use_VertColorAsMask: 0
     - _ZWrite: 1
     - __Advanced_Foldout: 0
-    - __Albedo_Foldout: 0
+    - __Albedo_Foldout: 1
     - __Carbon_Foldout: 0
     - __ClearCoat_Foldout: 0
-    - __Detail_Foldout: 0
+    - __Detail_Foldout: 1
     - __Lame_Foldout: 0
     - __Lang: 0
     - __Mask_Foldout: 0

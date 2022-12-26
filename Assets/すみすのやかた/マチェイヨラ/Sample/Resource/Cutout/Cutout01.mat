@@ -25,11 +25,11 @@ Material:
         m_Scale: {x: 40, y: 40}
         m_Offset: {x: 0, y: 0}
     - _Carbon_Normal:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 730ae9eea022ae8429f4078bf0ef63f2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Carbon_Tex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 6b18b483b2f2c1c4ea13d5d7531c68c7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ClearCoatNormal:
@@ -57,7 +57,7 @@ Material:
         m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 6c5ccb14ebbc89246abcc25a282fa127, type: 3}
         m_Scale: {x: 30, y: 30}
         m_Offset: {x: 0, y: 0}
     - _NormalMap2:
@@ -82,6 +82,7 @@ Material:
     - _BaseSurfSmoothness: 0.6
     - _BlendFactor: 1
     - _BlendMode: 0
+    - _CCMaskChannel: 4
     - _CCSCInvert: 0
     - _CCSmoothAdjust: 1
     - _CCSmoothChannel: 4
@@ -129,11 +130,13 @@ Material:
     - _GradMask_Tiling_Y: 1
     - _GradPower: 1.2
     - _GradShift: 0
+    - _InvertCCMask: 0
     - _InvertCarbonMask: 0
     - _InvertEmissionMask: 1
     - _InvertFresnel: 0
     - _InvertGlitterMask: 1
-    - _InvertGrad: 0
+    - _InvertGrad: 1
+    - _InvertGradFromDetailTex: 0
     - _InvertGradMask: 1
     - _InvertLameMask: 1
     - _InvertMask: 0
@@ -169,7 +172,7 @@ Material:
     - _MetallicCInvert: 0
     - _MetallicChannel: 0
     - _MoreLame: 0
-    - _NormalLevel: 0.7
+    - _NormalLevel: 0.5
     - _NormalLevel2: 0.5
     - _NormalMap2_Offset_X: 0
     - _NormalMap2_Offset_Y: 0
@@ -177,8 +180,8 @@ Material:
     - _NormalMap2_Tiling_Y: 1
     - _NormalMap_Offset_X: 0
     - _NormalMap_Offset_Y: 0
-    - _NormalMap_Tiling_X: 1
-    - _NormalMap_Tiling_Y: 1
+    - _NormalMap_Tiling_X: 2
+    - _NormalMap_Tiling_Y: 100
     - _NormalTiling: 30
     - _OpenGL: 1
     - _OpenGL2: 0
@@ -191,7 +194,7 @@ Material:
     - __Albedo_Foldout: 1
     - __Carbon_Foldout: 0
     - __ClearCoat_Foldout: 0
-    - __Detail_Foldout: 0
+    - __Detail_Foldout: 1
     - __Lame_Foldout: 0
     - __Lang: 0
     - __Mask_Foldout: 0
@@ -209,7 +212,7 @@ Material:
     - __sync_NormalMap2_Offset: 0
     - __sync_NormalMap2_Tiling: 1
     - __sync_NormalMap_Offset: 0
-    - __sync_NormalMap_Tiling: 1
+    - __sync_NormalMap_Tiling: 0
     - _test: 0
     m_Colors:
     - _Carbon_Color1: {r: 0.2, g: 0.2, b: 0.2, a: 1}

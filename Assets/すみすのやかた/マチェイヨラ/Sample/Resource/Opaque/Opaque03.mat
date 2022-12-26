@@ -71,6 +71,7 @@ Material:
     m_Floats:
     - _AffectByLightDir: 1
     - _BSSCInvert: 0
+    - _BSSSqrt: 0
     - _BSSmoothAdjust: 1
     - _BSSmoothChannel: 4
     - _BaseAffectByLightDir: 1
@@ -92,7 +93,8 @@ Material:
     - _BlendMode: 1
     - _CCMaskChannel: 4
     - _CCSCInvert: 0
-    - _CCSmoothAdjust: 1.1
+    - _CCSSqrt: 1
+    - _CCSmoothAdjust: 1
     - _CCSmoothChannel: 2
     - _CarbonMaskChannel: 0
     - _Carbon_Aspect: 0.5
@@ -200,7 +202,7 @@ Material:
     - __Advanced_Foldout: 0
     - __Albedo_Foldout: 1
     - __Carbon_Foldout: 1
-    - __ClearCoat_Foldout: 0
+    - __ClearCoat_Foldout: 1
     - __Detail_Foldout: 0
     - __Lame_Foldout: 0
     - __Lang: 0
