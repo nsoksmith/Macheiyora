@@ -14,7 +14,7 @@ namespace Macheiyora
 {
     public class MacheiyoraGUI : ShaderGUI
     {
-        private const string shaderVer = "3.1.0";
+        private const string shaderVer = "3.1.1";
         bool isOpenURL;
         private const string boothURL  = "https://smith-no-yakata.booth.pm/items/3767387";
         private const string gitHubURL = "https://github.com/nsoksmith/Macheiyora";
@@ -254,14 +254,18 @@ namespace Macheiyora
 
             MaterialProperty Lame            = FindProperty("_Lame", Prop);
             MaterialProperty LameBackFace    = FindProperty("_LameBackFace", Prop);
-            MaterialProperty LameChroma      = FindProperty("_LameChroma", Prop);
-            MaterialProperty LameHue         = FindProperty("_LameHue", Prop);
+            MaterialProperty LameChroma1     = FindProperty("_LameChroma1", Prop);
+            MaterialProperty LameChroma2     = FindProperty("_LameChroma2", Prop);
+            MaterialProperty LameHue1        = FindProperty("_LameHue1", Prop);
+            MaterialProperty LameHue2        = FindProperty("_LameHue2", Prop);
             MaterialProperty LameAspect      = FindProperty("_LameAspect", Prop);
             MaterialProperty LameVolume      = FindProperty("_LameVolume", Prop);
             MaterialProperty LameDistance    = FindProperty("_LameDistance", Prop);
             MaterialProperty LameThinOut     = FindProperty("_LameThinOut", Prop);
+            // MaterialProperty LameRandomness  = FindProperty("_LameRandomness", Prop);
             MaterialProperty LameMetallic    = FindProperty("_LameMetallic", Prop);
             MaterialProperty LameSmooth      = FindProperty("_LameSmooth", Prop);
+            MaterialProperty LameGlow        = FindProperty("_LameGlow", Prop);
 
             MaterialProperty Use_Carbon         = FindProperty("_Use_Carbon", Prop);
             MaterialProperty Carbon_Color1      = FindProperty("_Carbon_Color1", Prop);
@@ -328,12 +332,16 @@ namespace Macheiyora
             String Loc_Lame                 = "N/A";
             String Loc_BackFace             = "N/A";
             String Loc_LameCount            = "N/A";
-            String Loc_Chroma               = "N/A";
-            String Loc_Hue                  = "N/A";
+            String Loc_Chroma1              = "N/A";
+            String Loc_Chroma2              = "N/A";
+            String Loc_Hue1                 = "N/A";
+            String Loc_Hue2                 = "N/A";
             String Loc_Aspect               = "N/A";
             String Loc_Volume               = "N/A";
             String Loc_Distance             = "N/A";
             String Loc_ThinOut              = "N/A";
+            // String Loc_Randomness           = "N/A";
+            String Loc_Glow                 = "N/A";
             String Loc_Carbon               = "N/A";
             String Loc_Carbon_Color1        = "N/A";
             String Loc_Carbon_Color2        = "N/A";
@@ -389,12 +397,16 @@ namespace Macheiyora
                 Loc_Lame                 = "ラメ";
                 Loc_BackFace             = "裏面";
                 Loc_LameCount            = "ラメの量";
-                Loc_Chroma               = "彩度";
-                Loc_Hue                  = "色相";
+                Loc_Chroma1              = "彩度 1";
+                Loc_Chroma2              = "彩度 2";
+                Loc_Hue1                 = "色相 1";
+                Loc_Hue2                 = "色相 2";
                 Loc_Aspect               = "縦横比";
                 Loc_Volume               = "ボリューム";
                 Loc_Distance             = "間隙";
                 Loc_ThinOut              = "まばら";
+                // Loc_Randomness           = "ランダム性";
+                Loc_Glow                 = "輝き";
                 Loc_Carbon               = "カーボンファイバー";
                 Loc_Carbon_Color1        = "カーボン色 1";
                 Loc_Carbon_Color2        = "カーボン色 2";
@@ -450,12 +462,16 @@ namespace Macheiyora
                 Loc_Lame                 = "Sparkle";
                 Loc_BackFace             = "Back";
                 Loc_LameCount            = "Sparkle Count";
-                Loc_Chroma               = "Chroma";
-                Loc_Hue                  = "Hue";
+                Loc_Chroma1              = "Chroma1";
+                Loc_Chroma2              = "Chroma2";
+                Loc_Hue1                 = "Hue1";
+                Loc_Hue2                 = "Hue2";
                 Loc_Aspect               = "Aspect";
                 Loc_Volume               = "Volume";
                 Loc_Distance             = "Distance";
                 Loc_ThinOut              = "Thin Out";
+                // Loc_Randomness           = "Randomness";
+                Loc_Glow                 = "Glow";
                 Loc_Carbon               = "Carbon Fiber";
                 Loc_Carbon_Color1        = "Carbon Color 1";
                 Loc_Carbon_Color2        = "Carbon Color 2";
@@ -1007,14 +1023,18 @@ namespace Macheiyora
                 }
                 if (mat.GetInt("_Lame")>=1)
                 {
-                    ME.ShaderProperty(LameChroma, new GUIContent(Loc_Chroma));
-                    ME.ShaderProperty(LameHue, new GUIContent(Loc_Hue));
+                    ME.ShaderProperty(LameHue1, new GUIContent(Loc_Hue1));
+                    ME.ShaderProperty(LameChroma1, new GUIContent(Loc_Chroma1));
+                    ME.ShaderProperty(LameHue2, new GUIContent(Loc_Hue2));
+                    ME.ShaderProperty(LameChroma2, new GUIContent(Loc_Chroma2));
                     ME.ShaderProperty(LameAspect, new GUIContent(Loc_Aspect));
                     ME.ShaderProperty(LameVolume, new GUIContent(Loc_Volume));
                     ME.ShaderProperty(LameDistance, new GUIContent(Loc_Distance));
                     ME.ShaderProperty(LameThinOut, new GUIContent(Loc_ThinOut));
+                    // ME.ShaderProperty(LameRandomness, new GUIContent(Loc_Randomness));
                     ME.ShaderProperty(LameMetallic, new GUIContent(Loc_Metallic));
                     ME.ShaderProperty(LameSmooth, new GUIContent(Loc_Smooth));
+                    ME.ShaderProperty(LameGlow, new GUIContent(Loc_Glow));
                 }
             }
 

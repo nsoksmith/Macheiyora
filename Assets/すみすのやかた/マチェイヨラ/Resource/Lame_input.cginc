@@ -34,14 +34,18 @@ int   _Use_VertColorAsMask;
 int   _InvertLameMask;
 int   _LameMaskChannel;
 int   _LameBackFace;
-float _LameChroma;
-float _LameHue;
+float _LameChroma1;
+float _LameChroma2;
+float _LameHue1;
+float _LameHue2;
 float _LameAspect;
 float _LameVolume;
 float _LameDistance;
 float _LameThinOut;
+// float _LameRandomness;
 float _LameMetallic;
 float _LameSmooth;
+float _LameGlow;
 void vert (inout appdata_full v, out Input o)
 {
     UNITY_INITIALIZE_OUTPUT(Input,o);

@@ -55,3 +55,8 @@ float sigmoid(float value, float factor)
 {
     return smoothstep(factor * 0.5, (1 - factor) * 0.5 + 0.5, value);
 }
+
+float triWave(float x)
+{
+    return abs(2*frac(x)-1);
+}

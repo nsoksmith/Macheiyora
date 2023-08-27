@@ -139,14 +139,18 @@ Shader "すみすのやかた/マチェイヨラ/マチェイヨラ_Opaque"
         [KeywordEnum(None,Low,High)]
                     _Lame           ("Lame Glitter"    , Int) = 1
         [Toggle]    _LameBackFace   ("Lame BackFace"   , Int) = 1
-                    _LameChroma     ("Lame Chroma"     , range(0, 1)) = 0.8
-                    _LameHue        ("Lame Hue"        , range(0, 1)) = 0
+                    _LameHue1       ("Lame Hue1"       , range(0, 1)) = 0
+                    _LameHue2       ("Lame Hue2"       , range(0, 1)) = 1
+                    _LameChroma1    ("Lame Chroma1"    , range(0, 1)) = 0.9
+                    _LameChroma2    ("Lame Chroma2"    , range(0, 1)) = 0.9
                     _LameAspect     ("Lame Aspect"     , range(0.01, 0.99)) = 0.5
                     _LameVolume     ("Lame Volume"     , float) = 300
                     _LameDistance   ("Lame Distance"   , range(0, 1)) = 0.85
                     _LameThinOut    ("Lame Thin Out"   , range(0, 1)) = 0
+                    // _LameRandomness ("Lame Randomness" , range(0, 1)) = 0.3
                     _LameMetallic   ("Lame Metallic"   , range(0, 1)) = 0.9
                     _LameSmooth     ("Lame Smooth"     , range(0, 1)) = 0.9
+                    _LameGlow       ("Lame Glow"       , range(1, 2)) = 1.5
 
         [Toggle]    _Use_Carbon         ("Use Carbon" , Int) = 0
                     _Carbon_Color1      ("Color1", Color) = (0.2,0.2,0.2,1)

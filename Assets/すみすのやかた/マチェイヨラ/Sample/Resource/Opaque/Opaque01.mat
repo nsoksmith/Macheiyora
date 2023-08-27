@@ -9,8 +9,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Opaque01
   m_Shader: {fileID: 4800000, guid: 0233238f20fac5c4c9efba7053394971, type: 3}
-  m_ShaderKeywords: _ALPHABLEND_OFF _BASESURFGLITTER_ON _EMISSION_ON _GLITTERTYPE_ON
-    _INVERTMASK_ON _LAMEGLITTER_ON _LAMESURFGLITTER_ON _LAME_NONE
+  m_ShaderKeywords: _ALPHABLEND_OFF _BASESURFGLITTER_ON _CLEARCOAT_ON _EMISSION_ON
+    _GLITTERTYPE_ON _INVERTMASK_ON _LAMEGLITTER_ON _LAMESURFGLITTER_ON _LAME_HIGH
+    _USE_CARBON_COLOR1_ON _USE_CARBON_COLOR2_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -33,11 +34,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ClearCoatNormal:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 8aac0a2ee3c9ea24bb477f09dcb39179, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTex:
-        m_Texture: {fileID: 2800000, guid: a48c6e01b5a47df4896aea4b718bff5e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionTex:
@@ -53,7 +54,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GradTex:
-        m_Texture: {fileID: 2800000, guid: ecaaad43894eff0428b3af1d228d8c4a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 27c07a4e6864d2b44a4b7d0b72bcd0bd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -73,7 +74,7 @@ Material:
     - _BSSCInvert: 0
     - _BSSSqrt: 0
     - _BSSmoothAdjust: 0.8
-    - _BSSmoothChannel: 0
+    - _BSSmoothChannel: 4
     - _BaseAffectByLightDir: 1
     - _BaseGlitterLevel: 0.3
     - _BaseGlitterTex_Offset_X: 0
@@ -103,9 +104,9 @@ Material:
     - _Carbon_Grad1: 1
     - _Carbon_Grad2: 1
     - _Carbon_StripeAngle: 0
-    - _Carbon_Tiling: 10
+    - _Carbon_Tiling: 18.03
     - _CellSize: 100
-    - _ClearCoat: 0
+    - _ClearCoat: 1
     - _ClearCoatCount: 1
     - _ClearCoatNormalDirectX: 0
     - _ClearCoatNormalLevel: 0.127
@@ -115,7 +116,7 @@ Material:
     - _ClearCoatNormal_Offset_Y: 0
     - _ClearCoatNormal_Tiling_X: 1
     - _ClearCoatNormal_Tiling_Y: 1
-    - _ClearCoatSmooth: 0.95
+    - _ClearCoatSmooth: 0.871
     - _ClearCoatSmoothness: 0.92
     - _CullMode: 0
     - _DetailTex_Offset_X: 0
@@ -152,7 +153,7 @@ Material:
     - _InvertLameMask: 0
     - _InvertMask: 0
     - _Is_MatCap: 0
-    - _Lame: 0
+    - _Lame: 2
     - _LameAffectByLightDir: 0
     - _LameAspect: 0.5
     - _LameBackFace: 1
@@ -181,7 +182,7 @@ Material:
     - _Metallic: 0.95
     - _MetallicAdjust: 0.95
     - _MetallicCInvert: 0
-    - _MetallicChannel: 0
+    - _MetallicChannel: 4
     - _MoreLame: 0
     - _NormalLevel: 0.5
     - _NormalLevel2: 0.5
@@ -198,17 +199,17 @@ Material:
     - _OpenGL2: 0
     - _Transparency: 0
     - _Use_Carbon: 0
-    - _Use_Carbon_Color1: 0
-    - _Use_Carbon_Color2: 0
+    - _Use_Carbon_Color1: 1
+    - _Use_Carbon_Color2: 1
     - _Use_VertColorAsMask: 0
     - __Advanced_Foldout: 0
     - __Albedo_Foldout: 1
-    - __Carbon_Foldout: 0
-    - __ClearCoat_Foldout: 0
+    - __Carbon_Foldout: 1
+    - __ClearCoat_Foldout: 1
     - __Detail_Foldout: 1
-    - __Lame_Foldout: 0
+    - __Lame_Foldout: 1
     - __Lang: 0
-    - __Mask_Foldout: 0
+    - __Mask_Foldout: 1
     - __masked: 0
     - __sync_BaseGlitterTex_Offset: 0
     - __sync_BaseGlitterTex_Tiling: 1
@@ -227,8 +228,8 @@ Material:
     - _test: 0
     m_Colors:
     - _Carbon_Color1: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
-    - _Carbon_Color2: {r: 0.18039216, g: 0.18039216, b: 0.18039216, a: 1}
+    - _Carbon_Color2: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
     - _ClearCoatColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.1981132, g: 0.1981132, b: 0.1981132, a: 1}
     - _Test_vec: {r: 1, g: 1, b: 1, a: 1}
     - _color: {r: 1, g: 1, b: 1, a: 1}
